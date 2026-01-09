@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+</head>
+<body>
+  <h1>Your Name</h1>
+  <p>Data Science Student</p>
+
+  <p>
+    <a href="CV.pdf">Download My CV</a>
+  </p>
+
+  <p>
+    <a href="https://www.kaggle.com/yourusername">My Kaggle Profile</a>
+  </p>
+</body>
+</html>
