@@ -75,7 +75,6 @@
 
         section {
             margin-bottom: 80px;
-            animation: fadeIn 1s ease forwards;
         }
 
         h2 {
@@ -88,6 +87,7 @@
             padding-bottom: 5px;
         }
 
+        /* Profile/About Section */
         .profile-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -104,6 +104,7 @@
             color: var(--text-muted);
         }
 
+        /* Skill Tags */
         .skills-container {
             display: flex;
             flex-wrap: wrap;
@@ -121,6 +122,7 @@
             letter-spacing: 0.5px;
         }
 
+        /* Contact & Buttons */
         .contact-links {
             display: flex;
             flex-wrap: wrap;
@@ -153,6 +155,13 @@
             text-align: center;
         }
 
+        .btn-download:hover {
+            background: #333;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Experience/Project Cards */
         .card {
             background: var(--card-bg);
             padding: 30px;
@@ -174,11 +183,6 @@
             display: block;
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
         footer {
             text-align: center;
             padding: 60px 20px;
@@ -187,6 +191,17 @@
             letter-spacing: 1px;
             text-transform: uppercase;
         }
+
+        /* Creative Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        section {
+            animation: fadeIn 1s ease forwards;
+        }
+
     </style>
 </head>
 <body>
@@ -204,13 +219,16 @@
             <h2>Profil</h2>
             <div class="profile-grid">
                 <div class="bio-text">
-                    <p>Motivated Digital Marketing student at EST Salé with a passion for automotive culture. I bridge the gap between marketing strategy and high-end visual aesthetics.</p>
+                    <p>Motivated Digital Marketing student at EST Salé with a lifelong passion for automotive culture. I bridge the gap between technical marketing strategy and high-end visual aesthetics (Photography & Videography).</p>
+                    <p>Specialized in promoting the automotive scene in Morocco through innovative content and digital growth strategies.</p>
                 </div>
                 <div>
                     <h2>Technical Stack</h2>
                     <div class="skills-container">
+                        <span class="skill-tag">Adobe Premiere Pro</span>
+                        <span class="skill-tag">After Effects</span>
+                        <span class="skill-tag">Lightroom</span>
                         <span class="skill-tag">Python (Kaggle)</span>
-                        <span class="skill-tag">Adobe Suite</span>
                         <span class="skill-tag">Digital Strategy</span>
                         <span class="skill-tag">Content Creation</span>
                     </div>
@@ -218,32 +236,37 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
+        <!-- Experience Section -->
+        <section id="experience">
             <h2>Work & Projects</h2>
             
-            <!-- Kaggle Project Card -->
+            <!-- Data Science Project for TP -->
             <div class="card">
                 <h3>Car Sales Marketing Analysis</h3>
-                <span class="meta">Kaggle Data Science Project</span>
-                <p>Data-driven analysis of car sales trends to optimize marketing segments and consumer targeting.</p>
-                <div class="contact-links" style="margin-top: 15px;">
-                    <a href="https://github.com/0rdits/car-sales-marketing-analysis" target="_blank">View Repo →</a>
-                    <a href="https://www.kaggle.com/code/marouane0rdits/notebook72c7cae1d7/" target="_blank">Kaggle Notebook →</a>
+                <span class="meta">Kaggle Data Science Project | Phase 2 TP</span>
+                <p>Data-driven exploration of automotive sales trends using Python. Analyzing brand performance and market segmentation.</p>
+                <div class="contact-links" style="margin-top: 10px;">
+                    <a href="https://www.kaggle.com/code/marouane0rdits/notebook72c7cae1d7/" target="_blank">View on Kaggle →</a>
                 </div>
             </div>
 
             <div class="card">
                 <h3>Automotive Content Creator</h3>
                 <span class="meta">Instagram: @Ordits</span>
-                <p>Leading the digital aesthetic for the Moroccan automotive scene through photography and videography.</p>
+                <p>Leading the digital aesthetic for the Moroccan automotive scene. Managing community engagement, video editing, and high-performance photography.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Freelance Collaborations</h3>
+                <span class="meta">Batiglobe, Magnum Oto, Garage Lahcen</span>
+                <p>Creating promotional video content for real estate, fitness, and automotive industries with a focus on trend analysis and high conversion.</p>
             </div>
         </section>
 
         <!-- CV Section -->
         <section id="cv" style="text-align: center; background: #000; color: white; padding: 60px 20px; border-radius: 20px;">
             <h2 style="color: white; border-color: white;">Curriculum Vitae</h2>
-            <p style="margin-bottom: 30px; opacity: 0.8;">Download the full creative document.</p>
+            <p style="margin-bottom: 30px; opacity: 0.8;">Download the full creative document for professional details.</p>
             <a href="cv-marouane-charaha.pdf" download class="btn-download" style="background: white; color: black;">Get PDF Version</a>
         </section>
 
@@ -253,8 +276,9 @@
             <div class="contact-links">
                 <a href="mailto:orditsmedia@gmail.com">orditsmedia@gmail.com</a>
                 <a href="https://www.linkedin.com/in/Marouane%20Charaha" target="_blank">LinkedIn</a>
+                <a href="https://instagram.com/ordits" target="_blank">Instagram</a>
                 <a href="https://github.com/0rdits" target="_blank">GitHub</a>
-                <a href="https://www.kaggle.com/marouane0rdits" target="_blank">Kaggle Profile</a>
+                <a href="https://www.kaggle.com/marouane0rdits" target="_blank">Kaggle</a>
             </div>
         </section>
 
